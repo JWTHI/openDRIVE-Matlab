@@ -21,10 +21,10 @@ The basic usage of the class can be found in [main.m](main.m). The main steps ar
 		* Specific area: `ROI = [x_min x_max y_min y_max]`
 		* Whole map: `ROI = []`
 
-Those steps are required for the follwoing methods to work.
+The above listed steps are required for the follwoing methods to work.
 - Plotting the enriched map:
 	- `MAP.plot([],ROI,[])`
-		- Every lane of type `'driving', 'sidewalk', 'restricted'` which got constructed during enrich and all signals will be plotted. To add more lane types to be plotted, they need to be defined in  [plot.m](+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane/plot.m).
+		- Every lane of type `'driving', 'sidewalk', 'restricted'`, which got constructed during enrich and all signals will be plotted. To add more lane types to be plotted, they need to be defined in  [plot.m](+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane/plot.m).
 		- The input arguments are:
 			1. `ignoreStrings`: Cellarray containing strings of elements which should not be plotted. Example:
 				- `{'signals','sidewalk'}`
@@ -42,11 +42,11 @@ Those steps are required for the follwoing methods to work.
 ## Class and Packages Structure 
 The class structure is embedded into a package foldering. The structure will be briefly explained for a single case, but it holds for all the classes.
 
-All classes which are related to the openDRIVE are within the ODR package [+ODR](+ODR/). Other, general functions are located in [+Utils](+Utils/). The class defintion and the methods of openDRIVE can be found in the folder [+ODR/@OpenDRIVE](+ODR/@OpenDRIVE/). The file, which has the name of the folder contains the class defintion, the ramining files are methods of this class. A nested structure is deployed, hence the defintions for example the lane class are located in [+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane](+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane/).
+All classes, which are related to openDRIVE are within the ODR package [+ODR](+ODR/). Other, general functions are located in [+Utils](+Utils/). The class defintion and the methods of openDRIVE can be found in the folder [+ODR/@OpenDRIVE](+ODR/@OpenDRIVE/). The file, which has the name of the folder contains the class defintion, the ramining files are methods of this class. A nested structure is deployed, hence the defintions for example the lane class are located in [+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane](+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane/).
 
 
 ## Data and Example Files
-To test the provided tool, one may download the sample files from [http://www.opendrive.org/download.html](http://www.opendrive.org/download.html) and placed in the same folder as the project. The filename (without .xodr) has to be defined in the main.
+To test the provided tool, one may download the sample files from [http://www.opendrive.org/download.html](http://www.opendrive.org/download.html) and place them in the same folder as the project. The filename (without .xodr) has to be defined in the main.
 
 ## Licence
 [LICENSE](LICENSE.txt)
