@@ -1,6 +1,6 @@
 # MATLAB openDRIVE Tool
 ## Introduction
-This repository provides a MATLAB tool for the usage of the [openDRIVE] format. The tool is parsing the xml/xodr file into a MATLAB class structure which is based on the openDRIVE specifications. Additionally, the map is enriched with additional attributed and methods to enable fast queries and easy working with the map. Hence, the map can be loaded and used within MATLAB.
+This repository provides a MATLAB tool for the usage of the [openDRIVE] format. The tool is parsing the xml/xodr file into a MATLAB class structure which is based on the openDRIVE specifications. Additionally, the map is enriched with additional attributes and methods to enable fast queries and easy working with the map. Hence, the map can be loaded and used within MATLAB.
 
 In this release, the main functionalities are
 * parsing the file into the class structure
