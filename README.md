@@ -8,7 +8,10 @@ In this release, the main functionalities are
 * plot the enriched map for a given ROI
 * get map information for a given 2-D point
 
-**Note:** So far, the map points are only constructed  in 2-D (xy). No objects are considered.
+**Note:** 
+- So far, the map points are only constructed  in 2-D (xy).
+- No objects are considered.
+- tPoints are not consistent to the t variable as used in openDRIVE. Here, it represents the angle of the tangent at a certain s.
 
 ## Usage
 The basic usage of the class can be found in [main.m](main.m). The main steps are as follows:
