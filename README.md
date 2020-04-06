@@ -15,6 +15,11 @@ In this release, the main functionalities are
 - No objects are considered.
 - tPoints are not consistent to the t variable as used in openDRIVE. Here, it represents the angle of the tangent at a certain s.
 
+## Examples
+| <img src="examples/crossing.png" width="410"> | <img src="examples/complete.png" width="410">|
+|:---:|:---:|
+| Plot crossing | Plot complete view of an example |
+
 ## Usage
 The basic usage of the class can be found in [main.m](main.m). The main steps are as follows:
 1. Construct an empty map as:  
