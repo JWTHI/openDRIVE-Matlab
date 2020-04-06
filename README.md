@@ -58,7 +58,7 @@ All classes, which are related to openDRIVE are within the ODR package [+ODR](+O
 ## Data and Example Files
 To test the provided tool, one may download the sample files from [http://www.opendrive.org/download.html](http://www.opendrive.org/download.html) and place them in the same folder as the project. The filename (without .xodr) has to be defined in the main.
 
-## Licence
+## License
 [LICENSE](LICENSE.txt)
 
 ## Reference
