@@ -2,6 +2,8 @@
 ## Introduction
 This repository provides a MATLAB tool for the usage of the [openDRIVE] format. The tool is parsing the xml/xodr file into a MATLAB class structure which is based on the openDRIVE specifications. Additionally, the map is enriched with additional attributes and methods to enable fast queries and easy working with the map. Hence, the map can be loaded and used within MATLAB.
 
+The tool was first used and mentioned in the work "An Entropy Based Outlier Score and its Application to Novelty Detection for Road Infrastructure Images" published in [31st IEEE Intelligent Vehicles Symposium 2020](https://2020.ieee-iv.org/).
+
 In this release, the main functionalities are
 * parsing the file into the class structure
 * enrich the map for a given *Region of Interest* ROI
