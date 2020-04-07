@@ -31,16 +31,16 @@ The basic usage of the class can be found in [main.m](main.m). The main steps ar
 		* Specific area: `ROI = [x_min x_max y_min y_max]`
 		* Whole map: `ROI = []`
 
-The above listed steps are required for the follwoing methods to work.
+The above listed steps are required for the following methods to work.
 - Plotting the enriched map:
 	- `MAP.plot([],ROI,[])`
 		- Every lane of type `'driving', 'sidewalk', 'restricted'`, which got constructed during enrich and all signals will be plotted. To add more lane types to be plotted, they need to be defined in  [plot.m](+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane/plot.m).
 		- The input arguments are:
 			1. `ignoreStrings`: Cellarray containing strings of elements which should not be plotted. Example:
 				- `{'signals','sidewalk'}`
-			2. `ROI` sets the axis limits. `[]` will automatically set the axis so contain the full map.
+			2. `ROI` sets the axis limits. `[]` will automatically set the axis to contain the full map.
 			3. `orientation` set the orientation of the map in radians, with `[]` no orientation (upper is north). **Note:** Since the graphic objects themselfs are rotated, the axis won't be correct after rotation. Use this property carefully.
-		- If the signs of the signals shall be plotted, a folder containg the corresponding `.png` files has to be added to the MATLAB path. The filenames have to be the corresponding sign ID.
+		- If the signs of the signals shall be plotted, a folder containing the corresponding `.png` files has to be added to the MATLAB path. The filenames have to be the corresponding sign ID.
 
 - Determine the map information for a point
 	- `[laneSectionNr, laneID,roadID] = MAP.getRoad_pos(point)`
@@ -52,7 +52,7 @@ The above listed steps are required for the follwoing methods to work.
 ## Class and Packages Structure 
 The class structure is embedded into a package foldering. The structure will be briefly explained for a single case, but it holds for all the classes.
 
-All classes, which are related to openDRIVE are within the ODR package [+ODR](+ODR/). Other, general functions are located in [+Utils](+Utils/). The class defintion and the methods of openDRIVE can be found in the folder [+ODR/@OpenDRIVE](+ODR/@OpenDRIVE/). The file, which has the name of the folder contains the class defintion, the ramining files are methods of this class. A nested structure is deployed, hence the defintions for example the lane class are located in [+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane](+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane/).
+All classes, which are related to openDRIVE are within the ODR package [+ODR](+ODR/). Other, general functions are located in [+Utils](+Utils/). The class defintion and the methods of openDRIVE can be found in the folder [+ODR/@OpenDRIVE](+ODR/@OpenDRIVE/). The file, which has the name of the folder contains the class defintion, the remaining files are methods of this class. A nested structure is deployed, hence the defintions for example the lane class are located in [+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane](+ODR/+roadPKG/+lanesPKG/+laneSectionPKG/@lane/).
 
 
 ## Data and Example Files
