@@ -2,7 +2,7 @@
 ## Introduction
 This repository provides a MATLAB tool for the usage of the [openDRIVE] format. The tool is parsing the xml/xodr file into a MATLAB class structure which is based on the openDRIVE specifications. Additionally, the map is enriched with additional attributes and methods to enable fast queries and easy working with the map. Hence, the map can be loaded and used within MATLAB.
 
-The tool was first used and mentioned in the work "An Entropy Based Outlier Score and its Application to Novelty Detection for Road Infrastructure Images" published in [31st IEEE Intelligent Vehicles Symposium 2020](https://2020.ieee-iv.org/).
+The tool was first used and mentioned in the work "An Entropy Based Outlier Score and its Application to Novelty Detection for Road Infrastructure Images" published in [31st IEEE Intelligent Vehicles Symposium 2020](https://2020.ieee-iv.org/) [1].
 
 In this release, the main functionalities are
 * parsing the file into the class structure
@@ -62,4 +62,16 @@ To test the provided tool, one may download the sample files from [http://www.op
 [LICENSE](LICENSE.txt)
 
 ## Reference
+[1]: **An Entropy Based Outlier Score and its Application to Novelty Detection for Road Infrastructure Images**; Jonas Wurst, Alberto Flores Fernández, Michael Botsch and Wolfgang Utschick; *2020 IEEE Intelligent Vehicles Symposium (IV)*; [Paper](tba)  
 [openDRIVE]: Most recent specification can be found in [http://www.opendrive.org/download.html](http://www.opendrive.org/download.html)
+
+## Citation
+To cite the work use:
+```
+@INPROCEEDINGS{WurstIV20,
+author={J. {Wurst} and A. {Flores Fernández} and M. {Botsch} and W. {Utschick}},
+booktitle={2020 IEEE Intelligent Vehicles Symposium (IV)},
+title={{An Entropy Based Outlier Score and its Application to Novelty Detection for Road Infrastructure Images}},
+year={2020}
+}
+```
